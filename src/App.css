@@ -6,13 +6,17 @@
     font-family: 'Nunito', sans-serif;
 }
 
+HTML {
+    background-color: #a5a5a5;
+}
+
 .box {
     width: 100%;
     height: 100vh;
     background-color: white;
 }
 
-body {
+.main-container {
     background-color: #a5a5a5;
 }
 
@@ -80,7 +84,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #f7f7f7ec;
-    padding-top: 2rem;
+    padding-top: 1.75rem;
 }
 
 .contact-info ul {
@@ -100,24 +104,25 @@ body {
     color: #ca6e1d;
 }
 
-.fa-phone {
-    margin-left: 1.2px;
-}
+
+/* .fa-phone {
+    margin-left: .5px;
+} */
 
 .phone-link {
     margin-left: 1.8px;
 }
 
 .fa-github {
-    margin-left: 1.35px;
+    margin-left: 1.5px;
 }
 
 .fa-map-marker {
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 .map-link {
-    margin-left: 3.2px;
+    margin-left: 2px;
 }
 
 .contact-info a {
@@ -128,6 +133,11 @@ body {
 .contact-info a:hover {
     text-decoration: underline;
     color: #ca6e1d;
+}
+
+.contact-info i:hover {
+    text-decoration: underline;
+    color: #f7f7f7;
 }
 
 .skills-section ul {
@@ -160,6 +170,10 @@ body {
     width: 70%;
 }
 
+.react-progress {
+    width: 55%;
+}
+
 .csharp-progress {
     width: 70%;
 }
@@ -177,6 +191,10 @@ body {
 }
 
 .dj-progress {
+    width: 50%;
+}
+
+.flask-progress {
     width: 50%;
 }
 
@@ -278,19 +296,73 @@ body {
 }
 
 
-/* Media Queries*/
+/* Languages */
 
-@media screen and (max-width:1350px) {
-    .left-section {
-        grid-column: span 3;
-    }
-    .right-section {
-        grid-column: span 4;
-    }
-    .right-title::after {
-        width: 40%;
-    }
+.lang-container {
+    width: 100%;
+    height: 70px;
+    background-color: #1e1e1e;
 }
+
+.lang-select {
+    width: 50%;
+    margin: auto;
+}
+
+.eng {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.eng:hover {
+    box-shadow: 0px 0px 4px #f7f7f7;
+}
+
+#eng-active {
+    background-image: url("./components/images/eng.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#eng-disabled {
+    background-image: url("./components/images/eng-disabled.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.swe {
+    float: right;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.swe:hover {
+    box-shadow: 0px 0px 4px #f7f7f7;
+}
+
+#swe-active {
+    background-image: url("./components/images/swe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#swe-disabled {
+    background-image: url("./components/images/swe-disabled.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Media Queries*/
 
 @media screen and (max-width:1450px) {
     .progress-bar {
@@ -301,6 +373,27 @@ body {
     }
 }
 
+@media screen and (max-width:1350px) {
+    .left-section {
+        grid-column: span 3;
+    }
+    .right-section {
+        grid-column: span 4;
+    }
+    .right-title::after {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1145px) {
+    .main-content {
+        width: 100%;
+    }
+    .right-main-content {
+        padding: 2rem;
+    }
+}
+
 @media screen and (max-width:1000px) {
     .main-content {
         grid-template-columns: repeat(1, 1fr);
@@ -308,11 +401,22 @@ body {
     .profile img {
         width: 40%;
     }
+    .left-content {
+        padding-left: 0;
+        padding: 2rem;
+    }
+    .skills-section ul {
+        margin-right: 3rem;
+    }
 }
 
 @media screen and (max-width:780px) {
     .timeline {
         grid-template-columns: repeat(1, 1fr);
+        margin: 0 0 1.5rem 1rem;
+    }
+    .left-tl-content {
+        margin-bottom: 1rem;
     }
 }
 
@@ -326,5 +430,20 @@ body {
     }
     .sect {
         padding: 2rem;
+    }
+    .skills-section ul {
+        margin-right: 2rem;
+    }
+    .right-title::after {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .skills-section ul {
+        margin-right: 1rem;
+    }
+    .right-title::after {
+        display: none;
     }
 }
