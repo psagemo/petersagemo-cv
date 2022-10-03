@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css'
 
+// Populates About Me section based on language
 function AboutMe(props) {
     if ( props.l.eng === true ) {
         return (

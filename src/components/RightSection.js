@@ -4,7 +4,7 @@ import AboutMe from './AboutMe'
 import Education from './Education'
 import Experience from './Experience'
 
-
+// Initiates and calls components in right section with language state
 function RightSection(props) {
     return(
         <section className="right-section">

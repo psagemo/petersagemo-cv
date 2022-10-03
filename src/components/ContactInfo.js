@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css'
 
+// Populates Contact Info section based on language
 function ContactInfo(props) {
     if ( props.l.eng === true ){
         return (

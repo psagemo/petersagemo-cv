@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css'
 
+// Populates Skill Section based on language
 function SkillSection(props) {
     if ( props.l.eng === true ){
         return (

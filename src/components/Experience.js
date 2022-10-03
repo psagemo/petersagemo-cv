@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css'
 
+// Populates Experience section based on language
 function Experience(props) {
     if ( props.l.eng === true ) {
         return (

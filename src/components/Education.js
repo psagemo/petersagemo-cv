@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css'
 
+// Populates Education section based on language
 function Education(props) {
     if ( props.l.eng === true ) {
         return (

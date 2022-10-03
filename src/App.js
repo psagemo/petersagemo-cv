@@ -1,14 +1,16 @@
-
 import { useState } from 'react'
 import './App.css'
-import LangSelect from './components/LangSelect'
 import LeftSection from './components/LeftSection'
 import RightSection from './components/RightSection'
 
-function App() {
 
+// Main js app that sets language and passes language state to all other components
+function App() {
+  
+  // Set language and setter state
   const [lang, setLang] = useState({ eng: true, swe: false })
 
+  // Toggle language functionality
   let handleLang = (e) => {
       e.preventDefault();
       if( e.target.className == "eng" ){
@@ -19,10 +21,8 @@ function App() {
       }
   }
 
-  console.log(lang);
-
+  // English template
   if ( lang.eng === true ) {
-    console.log("eng")
     return (
       <div className='main-container'>
       <div className="lang-container">
@@ -32,15 +32,15 @@ function App() {
         </div>
       </div>            
         <div className="main-content">
-          {/* <LangSelect /> */}
           <LeftSection l={lang}/>
           <RightSection l={lang}/>
         </div>
       </div>    
     );
   }
+
+  // Swedish template
   else if ( lang.swe === true ) {
-    console.log("swe")
     return (
       <div className='main-container'>
         <div className="lang-container">
@@ -50,15 +50,12 @@ function App() {
           </div>
         </div>                            
         <div className="main-content">
-          {/* <LangSelect />  */}
           <LeftSection l={lang}/>
           <RightSection l={lang}/>
         </div>
       </div>    
     );
   }
-
-  
 }
 
 export default App;

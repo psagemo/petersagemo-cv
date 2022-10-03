@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import '../App.css'
 import profilePicture from "./images/CV-img1.png"
 
-function Profile(props) {
-        
+// Populates profile section based on language
+function Profile(props) {        
     if ( props.l.eng === true ) {
         return (
             <div className="profile">
