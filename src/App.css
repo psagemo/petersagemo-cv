@@ -6,6 +6,10 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.center {
+    text-align: center;
+}
+
 HTML {
     background-color: #a5a5a5;
 }
@@ -141,81 +145,25 @@ HTML {
 }
 
 .skills-section ul {
-    padding-top: 2rem;
+    margin-top: 1rem;
+    width: 150px;
+    border-left: 2px solid #ca6e1d;
+    padding-top: 1rem;
+    padding-left: .5rem;
 }
 
 .skills-section ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: .4rem 0;
+    padding: .3rem 0;
 }
 
-.progress-bar {
-    width: 100%;
-    height: .4rem;
-    background-color: #382518;
-    position: relative;
-    border-radius: 12px;
+.skills-left {
+    float: left;
 }
 
-.progress {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background-color: #ca6e1d;
-    border-radius: 12px;
-}
-
-.js-progress {
-    width: 70%;
-}
-
-.react-progress {
-    width: 55%;
-}
-
-.csharp-progress {
-    width: 70%;
-}
-
-.dotnet-progress {
-    width: 0;
-}
-
-.hc-progress {
-    width: 80%;
-}
-
-.py-progress {
-    width: 65%;
-}
-
-.dj-progress {
-    width: 50%;
-}
-
-.flask-progress {
-    width: 50%;
-}
-
-.java-progress {
-    width: 40%;
-}
-
-.c-progress {
-    width: 40%;
-}
-
-.ps-progress {
-    width: 60%;
-}
-
-.il-progress {
-    width: 55%;
-}
-
-.in-progress {
-    width: 55%;
+.skills-right {
+    float: right;
 }
 
 .skill-title {
@@ -224,6 +172,29 @@ HTML {
     font-size: 1rem;
     position: relative;
     top: -7px;
+}
+
+.technologies {
+    min-height: 300px;
+}
+
+.projects {
+    width: 100%;
+}
+
+.project-container {
+    color: #f7f7f7;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+
+.project-title:hover {
+    color: #f7f7f7;
+}
+
+.project-container i{
+    color: #ca6e1d;
 }
 
 .right-main-content {
@@ -364,12 +335,24 @@ HTML {
 
 /* Media Queries*/
 
+@media screen and (max-width:1750px) {    
+    .skills-right {
+        float: left;
+    }
+    .technologies {
+        min-height: 500px;
+    }
+}
+
 @media screen and (max-width:1450px) {
     .progress-bar {
         width: 100%
     }
     .left-content {
         padding-left: 2rem;
+    }
+    .technologies {
+        min-height: 500px;
     }
 }
 
@@ -382,6 +365,12 @@ HTML {
     }
     .right-title::after {
         width: 50%;
+    }
+    .skills-right {
+        float: right;
+    }
+    .technologies {
+        min-height: 300px;
     }
 }
 
@@ -407,6 +396,9 @@ HTML {
     }
     .skills-section ul {
         margin-right: 3rem;
+    }
+    .skills-right {
+        float: left;
     }
 }
 
@@ -447,3 +439,72 @@ HTML {
         display: none;
     }
 }
+
+/*
+.progress-bar {
+    width: 100%;
+    height: .4rem;
+    background-color: #382518;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #ca6e1d;
+    border-radius: 12px;
+}
+
+ .js-progress {
+    width: 70%;
+}
+
+.react-progress {
+    width: 55%;
+}
+
+.csharp-progress {
+    width: 70%;
+}
+
+.dotnet-progress {
+    width: 0;
+}
+
+.hc-progress {
+    width: 80%;
+}
+
+.py-progress {
+    width: 65%;
+}
+
+.dj-progress {
+    width: 50%;
+}
+
+.flask-progress {
+    width: 50%;
+}
+
+.java-progress {
+    width: 40%;
+}
+
+.c-progress {
+    width: 40%;
+}
+
+.ps-progress {
+    width: 60%;
+}
+
+.il-progress {
+    width: 55%;
+}
+
+.in-progress {
+    width: 55%;
+} */
