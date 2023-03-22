@@ -13,10 +13,10 @@ function App() {
   // Toggle language functionality
   let handleLang = (e) => {
       e.preventDefault();
-      if( e.target.className == "eng" ){
+      if( e.target.className === "eng" ){
           setLang({ eng: true, swe: false })
       }
-      else if( e.target.className == "swe" ){
+      else if( e.target.className === "swe" ){
           setLang({ eng: false, swe: true })
       }
   }
