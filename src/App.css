@@ -193,7 +193,7 @@ HTML {
     color: #f7f7f7;
 }
 
-.project-container i{
+.project-container i {
     color: #ca6e1d;
 }
 
@@ -206,6 +206,8 @@ HTML {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
     position: relative;
 }
 
@@ -264,6 +266,7 @@ HTML {
     padding-left: 2rem;
     position: relative;
     padding-bottom: 2rem;
+    min-height: 120px;
 }
 
 
@@ -335,7 +338,7 @@ HTML {
 
 /* Media Queries*/
 
-@media screen and (max-width:1750px) {    
+@media screen and (max-width:1750px) {
     .skills-right {
         float: left;
     }
@@ -439,6 +442,7 @@ HTML {
         display: none;
     }
 }
+
 
 /*
 .progress-bar {

@@ -10,13 +10,16 @@ function SkillSection(props) {
                     <h3 className="main-title">Skills</h3>
                     <ul className="skills-left">
                         <li>
-                            <p className="skill-title">C#</p>
+                            <p className="skill-title">C# .NET</p>
                         </li>
                         <li>
                             <p className="skill-title">JavaScript</p>
                         </li>
                         <li>
                             <p className="skill-title">HTML/CSS</p>
+                        </li>
+                        <li>
+                            <p className="skill-title">SQL</p>
                         </li>
                         <li>
                             <p className="skill-title">Python</p>
@@ -26,17 +29,17 @@ function SkillSection(props) {
                         </li>
                         <li>
                             <p className="skill-title">C</p>
-                        </li>
-                        <li>
-                            <p className="skill-title">SQL</p>
-                        </li>
+                        </li>                        
                     </ul>
                     <ul className="skills-right">
                         <li>
-                            <p className="skill-title">.NET</p>
+                            <p className="skill-title">Razor</p>
                         </li>
                         <li>
                             <p className="skill-title">React</p>
+                        </li>
+                        <li>
+                            <p className="skill-title">Git/GitHub</p>
                         </li>
                         <li>
                             <p className="skill-title">Django</p>
@@ -49,10 +52,7 @@ function SkillSection(props) {
                         </li>
                         <li>
                             <p className="skill-title">Illustrator</p>
-                        </li>
-                        <li>
-                            <p className="skill-title">Indesign</p>
-                        </li>
+                        </li>                        
                     </ul>
                 </div>                
                 <div className="projects">

@@ -11,8 +11,8 @@ function RightSection(props) {
             <div className="main-content">
                 <div className="right-main-content">
                     <AboutMe l={props.l}/>
-                    <Education l={props.l}/>
                     <Experience l={props.l}/>
+                    <Education l={props.l}/>                    
                 </div>                
             </div>            
         </section>        
